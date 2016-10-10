@@ -1,0 +1,54 @@
+ PEGS5-call comes next
+
+
+ HATCH-call comes next
+
+ RNG ranlux not initialized:  doing so in HATCH
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from default seed
+ RAYLEIGH DATA AVAILABLE FOR MEDIUM  1 BUT OPTION NOT REQUESTED.
+
+ INCOHERENT DATA AVAILABLE FOR MEDIUM  1 BUT OPTION NOT REQUESTED.
+
+ SHELL COMPTON PROFILE DATA AVAILABLE FOR MEDIUM  1 BUT OPTION NOT REQUESTED.
+
+ ELECTRON IMPACT IONIZATION DATA AVAILABLE FOR MEDIUM  1 BUT OPTION NOT REQUESTED.
+
+ EGS SUCCESSFULLY 'HATCHED' FOR ONE MEDIUM.
+ WARNING in RMSFIT: no characteristic dimension input for media   1
+ Using old data from gsdist.dat with: 
+ efrach, efrachl =      5.0000E-02     2.0000E-01
+HPLT
+ &INP EI=    10.000,ISUB= 2,&END
+ TEST DATA FOR ROUTINE=COMPT G     ,#SAMPLES=   1000000,NBINS=   20
+ IQI= 0,RNLO,RNHI=  0.35972795  1.00000000,IRNFLG= 0,TVSTEP=         0.    
+   45885   45224   44674   43851   43596   43098   43485   43391   43657
+   43517   43917   44957   45584   47089   49378   52585   57148   63212
+   71489   84263
+ Plot of test data for routine COMPT G     ,#samples=   1000000
+ ei=10.000    ,elo= 0.24913    ehi=  10.000    ,req'd precn= 1.00E+06,nbins= 20
+ iqi= 0,rnlo,rnhi=  3.59727954 10.00000000,irnflg= 0
+   abcissa       counts   f(x)   ....5...10...15...20...25...30...35...40...45...50...55...60...65...70...75...80...85...90...95..100
+
+    0.00000E+00      0  0.000000x                                                                                                   
+    2.49134E-01  45885  0.045885                                                      x                                             
+    2.99648E-01  45224  0.045224                                                     x                                              
+    3.60404E-01  44674  0.044674                                                     x                                              
+    4.33479E-01  43851  0.043851                                                    x                                               
+    5.21371E-01  43596  0.043596                                                   x                                                
+    6.27083E-01  43098  0.043098                                                   x                                                
+    7.54229E-01  43485  0.043485                                                   x                                                
+    9.07155E-01  43391  0.043391                                                   x                                                
+    1.09109E+00  43657  0.043657                                                   x                                                
+    1.31232E+00  43517  0.043517                                                   x                                                
+    1.57840E+00  43917  0.043917                                                    x                                               
+    1.89843E+00  44957  0.044957                                                     x                                              
+    2.28335E+00  45584  0.045584                                                      x                                             
+    2.74632E+00  47089  0.047089                                                       x                                            
+    3.30316E+00  49378  0.049378                                                          x                                         
+    3.97291E+00  52585  0.052585                                                              x                                     
+    4.77845E+00  57148  0.057148                                                                   x                                
+    5.74731E+00  63212  0.063212                                                                           x                        
+    6.91263E+00  71489  0.071489                                                                                    x               
+    8.31422E+00  84263  0.084263                                                                                                   x
+    1.00000E+01      0  0.000000x                                                                                                   

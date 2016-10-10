@@ -1,0 +1,328 @@
+******************************************************************************
+********************************* ARRAY DATA *********************************
+******************************************************************************
+
+  Global reference frame is defined as
+  +x-axis (East), +y-axis (North), +z-axis (Up)
+
+  Latitude of array center - N:00d00.000
+@ ArrayLatitude [rad] <double>
+  0.0000000
+
+  Longitude of array center - E:00d00.000
+@ ArrayLongitude [rad] <double>
+  0.0000000
+
+  Altitude of array ASL
+@ ArrayAltitude [cm] <double>
+  0
+
+  Number of hexagonal rings of telescopes in an array:
+  The number of telescopes in an array is then 3*N*N+3*N+1
+@ ArrayNumTelRings [] <unsigned>
+  0
+
+  Spacing between telescopes in an array. From this parameter positions 
+  of telescopes are calculated on the hexagonal grid. Position of telescope 
+  is defined as point of intersection of its rotation axes.
+@ ArrayTelSpacing [cm] <double>
+  10000.
+
+  Telescopes are counted on a hex. grid in the direction of the +x-axis
+  when this flag is 0, and in the direction of the -x-axis when it is 1
+@ ArrayLabelingParity [] <bool>
+  0
+
+  Comma separated list of the Hex IDs of the scopes missing from the  
+  array. If none are missing this should be set to an empty string
+@ ScopeMissingList [] <std::string>
+  ""
+
+  Dispersion in the positioning of telescopes - X, Y
+@ ScopePosXYDisp [cm] <double>
+  0.
+
+  Dispersion in the positioning of telescopes - Z
+@ ScopePosZDisp [cm] <double>
+  0.
+
+  Coordinate of each scope relative to array center along north-south 
+  axis (north is +).
+@ ScopePosNorth [cm] <std::string>
+ ""
+
+  Coordinate of each scope relative to array center along east-west 
+  axis (east is +).
+@ ScopePosEast [cm] <std::string>
+ ""
+
+  Elevation of each scope relative to array center.
+@ ScopePosASL [cm] <std::string>
+ ""
+
+******************************************************************************
+******************************* TELESCOPE DATA *******************************
+******************************************************************************
+
+  Angle between rotation planes (deviation from perpendicularity of the
+  z and x axes )
+  Rotation around y-axis of elevation plane
+@ ScopeDeltaY [rad] <double>
+  0.
+
+  Deviation of z-axis from vertical
+@ ScopeAlphaX [rad] <double>
+  0.
+
+  Deviation of z-axis from vertical
+@ ScopeAlphaY [rad] <double>
+  0.
+
+  Elevation of telescope figured from y-axis toward z-axis
+  Home position of telescope is at elevation = 0
+@ ScopeElevation [rad] <double>
+  0.
+
+  Counted from +y-axis toward +x-axis
+  Home position of telescope is at azimuth = 0 (North)
+@ ScopeAzimuth [rad] <double>
+  0.
+
+  Vector to intersection of rotation axes from the center of
+  reflector in reflector reference frame (+y points along optical axis,
+  +z is up, and +x points East when telescope is in Home position,
+  the origin is in the center of the reflector).
+@ ScopeTranslationX [cm] <double>
+  0.
+
+@ ScopeTranslationY [cm] <double>
+  0.
+
+@ ScopeTranslationZ [cm] <double>
+  0.
+
+******************************************************************************
+******************************* REFLECTOR DATA *******************************
+******************************************************************************
+
+  Radius of curvature of the reflector
+@ ReflectorCurvR [cm] <double>
+  1920.
+
+  Telescope aperture (diameter of reflector)
+@ ReflectorApert [cm] <double>
+  1230.
+
+  Reflector rotation about the optical axis
+@ ReflectorRot [rad] <double>
+  1.5707963267948966
+
+  Alignment Mode - Mode 0 indicates that conventional DC alignment to a fixed
+  alignment point should be used. In this mode the reflector alignment point
+  is defined by ReflectorAlignPtX,Y,Z. This mode should (generally) only be
+  used for standard DC designs (but see the comment for ReflectorAlignPtY).
+  Mode 1 indicates that the reflector should be aligned to minimize the PSF 
+  at a point in the focal plane defined by ReflectorFPAlignTheta,Phi. This is
+  analagous to the method of alignment using an active alignment system.
+@ ReflectorAlignMode [] <unsigned>
+  1
+
+  Alignment object plane to be used in alignment mode 1. A value of
+  zero or inf implies the telescope should be focussed for objects at
+  infinity.
+@ ReflectorAlignObjectPlane [cm] <double>
+  inf
+
+  Alignment image plane to be used in alignment mode 1 (or mode 0 if
+  ReflectorAlignPtY is zero). A value of zero implies the telescope
+  should be focussed such that the image appears on the camera plane.
+@ ReflectorAlignImagePlane [cm] <double>
+  0.
+
+  Alignment Point X in reflector r.f.
+@ ReflectorAlignPtX [cm] <double>
+  0.
+
+  Alignment Point Y in reflector r.f. A value of zero indicates that the
+  alignment point should be calculated for each facet, which alows this method
+  to be used for modified DC designs.
+@ ReflectorAlignPtY [cm] <double>
+  0.
+
+  Alignment Point Z in reflector r.f.
+@ ReflectorAlignPtZ [cm] <double>
+  0.
+
+  Dispersion of alignment point in XZ direction
+@ ReflectorAlignPtXZDisp [cm] <double>
+  0
+
+  Dispersion of alignment point in Y direction
+@ ReflectorAlignPtYDisp [cm] <double>
+  0
+
+  Focal plane alignment point from center of FoV
+@ ReflectorFPAlignTheta [rad] <double>
+  0.
+
+  Focal plane alignment point polar angle
+@ ReflectorFPAlignPhi [rad] <double>
+  0.
+
+  The diameter of a sphere embedding reflector. This parameter is used to
+  check if photon hits reflector before actual ray tracing. THIS PARAMETER IS
+  NOT USED THIS WAY IN THE CURRENT VERSION. It *is* used by the test beam
+  generator. It can safely be set to zero as it is automatically increased
+  if necessary as mirrors are added.
+@ ReflectorIP [cm] <double>
+  0.
+
+  A set of objects which can obscure photons on way to and
+  (optionally) from the reflector. The format is a comma-separated
+  list of object definitions, as follows:
+  TUBE(x1,y1,z1,x2,y2,z2,r,incoming_only) - tube between two points
+  DISK(xc,yc,zc,nx,ny,nz,r,incoming_only) - disk with given center and normal
+@ ReflectorObscuration [] <std::string>
+  "DISK(0.0,1600.0,0.0,0.0,1.0,0.0,137.5,true),TUBE(0.0,1600.0,0.0,0.0,1770.0,0.0,137.5,true),TUBE(300.0,121.0,600.0,127.0,1685.0,52.6,8.5,true),TUBE(-300.0,121.0,600.0,-127.0,1685.0,52.6,8.5,true),TUBE(300.0,121.0,-600.0,127.0,1685.0,-52.6,8.5,true),TUBE(-300.0,121.0,-600.0,-127.0,1685.0,-52.6,8.5,true),TUBE(181.7,1191.1,225.5,127.0,1685.0,-52.6,7.0,true),TUBE(-181.7,1191.1,225.5,-127.0,1685.0,-52.6,7.0,true),TUBE(181.7,1191.1,225.5,300.0,121.0,-600.0,7.0,true),TUBE(-181.7,1191.1,225.5,-300.0,121.0,-600.0,7.0,true)"
+
+******************************************************************************
+******************************** MIRROR DATA *********************************
+******************************************************************************
+
+  Facet spacing, center to center distance beteen mirror sites on reflector
+@ MirrorFacetSpacing [cm] <double>
+  122.
+
+  Facet size of a single mirror of the reflector
+  It does not make sense to have MirrorFacetSize > MirrorFacetSpacing
+@ MirrorFacetSize [cm] <double>
+  120.
+
+  Focal length of a mirror
+@ MirrorFLength [cm] <double>
+  1607.
+
+  Dispersion of focal length
+@ MirrorFLengthDisp [cm] <double>
+  0.
+  
+  Mean fraction of photons contained by a circle with diameter given by
+  the spotsize parameter below. This parameter essentially defines what
+  the MirrorSpotSize and MirrorSpotSizeDisp parameters mean. Some typical
+  values are given here:
+  0.39 -- Spotsize is DIAMETER of 1-sigma of distribution  (2 x 1.00 sigma)
+  0.50 -- Spotsize is FWHM                                 (2 x 1.77 sigma)
+  0.67 -- Spotsize DIAMETER contains 2/3 of the photons    (2 x 1.48 sigma)
+  0.85 -- Spotsize DIAMETER contains 85% of the photons    (2 x 1.95 sigma)
+  0.90 -- Spotsize DIAMETER contains 90% of the photons    (2 x 2.15 sigma)
+@ MirrorSpotSizePhotonFraction [] <double>
+  0.80
+
+  Mean spot size (diameter) at the focal distance of the mirror from a 
+  parallel beam of light. This parameter defines the mean DIAMETER of a
+  circle which contains MirrorSpotSizePhotonFraction of the photons 
+  on a screen at its focal length.
+@ MirrorSpotSize [cm] <double>
+  0.
+
+  Dispersion of spot size (diameter) in the focal plane from a parallel 
+  beam of light
+@ MirrorSpotSizeDisp [cm] <double>
+  0.
+
+  Mirror reflection degrading factor (wavelength indep.)
+@ MirrorDegradingFactor [] <double> 
+  1.0
+
+  Dispersion in alignment of mirrors. Each mirror is aligned to telescope
+  alignment point with tangential error which results in the alignment
+  vector missing the alignment point by an amount given by this parameter
+@ MirrorAlignTangentDisp [cm] <double>
+  0.
+
+  Dispersion in mirror positioning on reflector - tangential to surface
+@ MirrorPosTangentDisp [cm] <double>
+  0.
+
+  Dispersion in mirror positioning on reflector - normal to surface
+@ MirrorPosNormalDisp [cm] <double>
+  0.
+
+  Mirrors are counted (on the hex. grid) in the direction of the +x-axis (east)
+  when this flag is 0, and in the direction of the -x-axis (west)
+  when this flag is 1 (in the reflector r.f. -- home position of telescope )
+@ MirrorLabelingParity [] <bool>
+  0
+
+  Comma separated list of the Hex IDs of the mirrors missing from each 
+  telescope. If none are missing this should be set to an empty string
+@ MirrorMissingList [] <std::string>
+  "1,62,67,72,77,82,87"
+
+******************************************************************************
+******************************** CAMERA DATA *********************************
+******************************************************************************
+
+  Camera diameter on the focal plane
+@ CameraDiameter [cm] <double>
+  235.
+
+  Focal plane position X in the reflector r.f.
+@ CameraFPTransX [cm] <double>
+  0.
+
+  Focal plane position Y in the reflector r.f.
+@ CameraFPTransY [cm] <double>
+  1600.
+
+  Focal plane position Z in the reflector r.f.
+@ CameraFPTransZ [cm] <double>
+  0.
+
+  Ideally, the focal plane is in the x-z plane in the reflector r.f..
+  However it can be rotated with respect to reflector r.f. Parameters
+  of such rotation are defined below
+  Focal plane rotation around x-axis in reflector r.f.
+@ CameraFPRotX [rad] <double>
+  0.
+
+  Focal plane rotation around y-axis in reflector r.f.
+@ CameraFPRotY [rad] <double>
+  0.
+
+  Focal plane rotation around z-axis in reflector r.f.
+@ CameraFPRotZ [rad] <double>
+  0.
+
+  The diameter of a sphere embedding camera. This parameter is used to check
+  if photon hits camera. Camera impact parameter (same as above). THIS
+  PARAMETER IS NOT USED IN THE CURRENT VERSION.
+@ CameraIP [cm] <double>
+  0.
+
+******************************************************************************
+********************************* PIXEL DATA *********************************
+******************************************************************************
+
+  Spacing between camera pixels
+@ PixelSpacing [cm] <double>
+  5.0
+
+  Survival probability of photon when it hits light concentrator
+@ PixelConcSurvProb [] <double>
+  1.0
+
+  Photocathode diameter
+@ PixelDiameter [cm] <double>
+  5.0
+
+  Pixels are counted (on the hex. grid) in the direction of the +x-axis
+  when this flag is 0, and in the direction of the -x-axis
+  when this flag is 1 in the camera r.f.
+@ PixelLabelingParity [] <bool>
+  0
+
+  Comma separated list of the Hex IDs of the pixels missing from each 
+  telescope. If none are missing this should be set to an empty string
+@ PixelMissingList [] <std::string>
+  ""

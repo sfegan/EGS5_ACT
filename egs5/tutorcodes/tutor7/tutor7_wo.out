@@ -1,0 +1,76 @@
+ PEGS5-call comes next
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor7
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ RAYLEIGH OPTION REQUESTED FOR MEDIUM NUMBER  1
+
+ EGS SUCCESSFULLY 'HATCHED' FOR ONE MEDIUM.
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.010 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.001 MeV
+ Reflected photon spectrum
+ for a    0.10 MeV pencil beam of photons on a   1.00 cm thick slab of lead
+ without fluorescence photon
+
+     Energy  counts/incident photon
+                          log(counts for 10^4 incident photons)
+    0.0020    0.0000*                                               
+    0.0040    0.0000*                                               
+    0.0060    0.0000*                                               
+    0.0080    0.0000*                                               
+    0.0100    0.0000*                                               
+    0.0120    0.0000*                                               
+    0.0140    0.0000*                                               
+    0.0160    0.0000*                                               
+    0.0180    0.0001*                                               
+    0.0200    0.0000*                                               
+    0.0220    0.0001*                                               
+    0.0240    0.0000*                                               
+    0.0260    0.0000*                                               
+    0.0280    0.0000*                                               
+    0.0300    0.0000*                                               
+    0.0320    0.0000*                                               
+    0.0340    0.0000*                                               
+    0.0360    0.0000*                                               
+    0.0380    0.0000*                                               
+    0.0400    0.0000*                                               
+    0.0420    0.0000*                                               
+    0.0440    0.0000*                                               
+    0.0460    0.0000*                                               
+    0.0480    0.0000*                                               
+    0.0500    0.0000*                                               
+    0.0520    0.0001*                                               
+    0.0540    0.0000*                                               
+    0.0560    0.0000*                                               
+    0.0580    0.0000*                                               
+    0.0600    0.0000*                                               
+    0.0620    0.0000*                                               
+    0.0640    0.0001*                                               
+    0.0660    0.0000*                                               
+    0.0680    0.0000*                                               
+    0.0700    0.0000*                                               
+    0.0720    0.0002   *                                            
+    0.0740    0.0016              *                                 
+    0.0760    0.0008          *                                     
+    0.0780    0.0014             *                                  
+    0.0800    0.0012            *                                   
+    0.0820    0.0002   *                                            
+    0.0840    0.0002   *                                            
+    0.0860    0.0001*                                               
+    0.0880    0.0000*                                               
+    0.0900    0.0000*                                               
+    0.0920    0.0000*                                               
+    0.0940    0.0000*                                               
+    0.0960    0.0000*                                               
+    0.0980    0.0000*                                               
+    0.1000    0.0011            *                                   

@@ -1,0 +1,25 @@
+ PEGS5-call comes next
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor2
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR ONE MEDIUM.
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.989 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.100 MeV
+
+ Fraction of energy reflected from plate=             0.655%
+ Fraction of energy deposited in plate=              12.958%
+ Fraction of energy transmitted through plate=       86.388%
+                                                 -----------
+ Total fraction of energy accounted for=            100.000%
+

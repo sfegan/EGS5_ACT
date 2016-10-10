@@ -1,0 +1,67 @@
+ PEGS5-call comes next
+
+ CG data
+   RPP                1 -1.5000E+00  1.5000E+00 -1.5000E+00  1.5000E+00  0.0000E+00  3.0000E+00
+   RPP                2 -2.5000E+00  2.5000E+00 -2.5000E+00  2.5000E+00 -1.0000E+00  4.0000E+00
+   END       
+   Z1                       1
+   Z2                       2         -1
+   END       
+ End of CG data
+
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR     2 MEDIA.
+
+ Quantities associated with each MEDIA:
+
+ FE-RAYLEIGH             
+      rho=   7.860000     g/cu.cm     rlc=   1.760680     cm
+      ae=   1.500000     MeV    ue=   2000.000     MeV
+      ap=  0.1000000     MeV    up=   2000.000     MeV
+
+
+ AIR AT NTP              
+      rho=  0.1205000E-02 g/cu.cm     rlc=   30387.50     cm
+      ae=   1.500000     MeV    ue=   2000.000     MeV
+      ap=  0.1000000     MeV    up=   2000.000     MeV
+
+
+ Shower Results:
+
+
+       e              z              w          iq   ir  iarg
+
+ 1   1000.000             0.       1.000000       -1    1   -1
+   1000.000             0.       1.000000       -1    1    0
+   999.9994      0.5137929E-04   1.000000       -1    1    0
+   999.9985      0.1367128E-03   1.000000       -1    1    0
+   999.9963      0.3330239E-03   1.000000       -1    1    0
+   999.9954      0.4111665E-03   1.000000       -1    1    0
+   999.9851      0.1339605E-02   1.000000       -1    1    0
+   999.9799      0.1814426E-02   1.000000       -1    1    0
+   999.9344      0.5911763E-02  0.9999999       -1    1    0
+   328.9163      0.7833319E-02  0.9999996        0    1    0
+   114.9873      0.4695935      0.9999970        1    1    0
+   114.5343      0.5105963      0.9960103        1    1    0
+   5.320595      0.5658373      0.9958004        0    1    1
+   108.6009      0.5658373      0.9960103        1    1    0
+   107.8342      0.6349829      0.9960103        1    1    0
+
+ Elapsed Time (sec)= 1.51760E+00
+
+
+ Incident total energy of electron=      1000.0 MeV
+ Number of cases in run=   1000
+
+ Energy deposition summary:
+
+ Fraction in region   1= 0.4015938
+ Fraction in region   2= 0.5984062
+
+
+ Total energy fraction in run=   1.000000    
+   Which should be close to unity

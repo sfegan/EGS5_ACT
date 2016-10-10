@@ -1,0 +1,57 @@
+ PEGS5-call comes next
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor6
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR ONE MEDIUM.
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.989 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.100 MeV
+
+                  Kinetic energy(MeV)  charge  angle w.r.t. z axis-degrees
+ Start history   1
+                         1.867           0             2.3
+                         0.680           0            10.8
+                        15.455          -1            27.0
+ Start history   2
+                         0.400           0            28.4
+                         1.451           0            28.2
+                        16.141          -1            21.6
+ Start history   3
+                         0.301           0            12.4
+                         1.402           0            33.3
+                        16.128          -1            73.4
+ Start history   4
+                         7.623           0            25.7
+                        10.344          -1            31.4
+ Start history   5
+                         0.678           0             3.2
+                         1.131           0             5.8
+                        16.286          -1            28.1
+ Start history   6
+                        17.973          -1            35.0
+ Start history   7
+                         2.874           0             2.9
+                         1.654           0            16.5
+                         2.588          -1            53.4
+                        10.489          -1            12.0
+ Start history   8
+                         0.180           0            83.7
+                        17.685          -1            21.7
+ Start history   9
+                        16.818          -1            12.2
+ Start history  10
+                         1.697           0             4.0
+                         0.440           0             7.5
+                         1.905           0             9.7
+                         2.210           0            41.9
+                        11.533          -1            48.2

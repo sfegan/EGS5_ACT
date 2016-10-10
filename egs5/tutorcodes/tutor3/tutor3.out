@@ -1,0 +1,47 @@
+ PEGS5-call comes next
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor3
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR ONE MEDIUM.
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.189 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.010 MeV
+
+ Response function
+ for a    5.00 MeV pencil beam ofphotons on a   2.54 cm thick slab of NaI
+     Energy  counts/incident photon
+      0.20    0.0060       *                                        
+      0.40    0.0058       *                                        
+      0.60    0.0054      *                                         
+      0.80    0.0050      *                                         
+      1.00    0.0058       *                                        
+      1.20    0.0065        *                                       
+      1.40    0.0047      *                                         
+      1.60    0.0043     *                                          
+      1.80    0.0060       *                                        
+      2.00    0.0047      *                                         
+      2.20    0.0061       *                                        
+      2.40    0.0053      *                                         
+      2.60    0.0059       *                                        
+      2.80    0.0059       *                                        
+      3.00    0.0061       *                                        
+      3.20    0.0053      *                                         
+      3.40    0.0069        *                                       
+      3.60    0.0079          *                                     
+      3.80    0.0103             *                                  
+      4.00    0.0273                                   *            
+      4.20    0.0226                             *                  
+      4.40    0.0155                    *                           
+      4.60    0.0352                                             *  
+      4.80    0.0209                           *                    
+      5.00    0.0371                                               *

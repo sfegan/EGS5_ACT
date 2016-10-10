@@ -1,0 +1,114 @@
+************************************************************************
+Initializing EGS5, loop = 1: charD =  0.00
+************************************************************************
+
+ PEGS5-call comes next
+
+ Using media number 1, SI with long steps       for this run
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor4
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR     2 MEDIA.
+ WARNING in RMSFIT: no characteristic dimension input for media   1
+ Using old data from gsdist.dat with: 
+ efrach, efrachl =      3.0000E-01     3.0000E-01
+ WARNING in RMSFIT: no characteristic dimension input for media   2
+ Using old data from gsdist.dat with: 
+ efrach, efrachl =      1.0000E-02     1.0000E-02
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.189 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.010 MeV
+CPU time =       13.368     sec for    50000 cases
+
+ Fraction of electrons reflected from plate=            8.1%
+ Fraction of electrons transmitted through plate=      66.5%
+
+
+ Fraction of energy reflected from plate=               3.9%
+ Fraction of energy deposited in plate=                59.2%
+ Fraction of energy transmitted through plate=         36.9%
+                                                 -----------
+ Total fraction of energy accounted for=              100.0%
+
+************************************************************************
+Initializing EGS5, loop = 2: charD =  0.00
+************************************************************************
+
+ Using media number 2, SI with short steps      for this run
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor4
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR     2 MEDIA.
+ WARNING in RMSFIT: no characteristic dimension input for media   1
+ Using old data from gsdist.dat with: 
+ efrach, efrachl =      3.0000E-01     3.0000E-01
+ WARNING in RMSFIT: no characteristic dimension input for media   2
+ Using old data from gsdist.dat with: 
+ efrach, efrachl =      1.0000E-02     1.0000E-02
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.189 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.010 MeV
+CPU time =       111.67     sec for    50000 cases
+
+ Fraction of electrons reflected from plate=            7.3%
+ Fraction of electrons transmitted through plate=      64.4%
+
+
+ Fraction of energy reflected from plate=               3.2%
+ Fraction of energy deposited in plate=                62.2%
+ Fraction of energy transmitted through plate=         34.6%
+                                                 -----------
+ Total fraction of energy accounted for=              100.0%
+
+************************************************************************
+Initializing EGS5, loop = 3: charD =  0.20
+************************************************************************
+
+
+ inseed=           1      (seed for generating unique sequences of Ranlux)
+ ranlux luxury level set by rluxgo : 1     p=  48
+ ranlux initialized by rluxgo from seed           1
+
+ Start tutor4
+ Call hatch to get cross-section data
+
+ HATCH-call comes next
+
+ EGS SUCCESSFULLY 'HATCHED' FOR     2 MEDIA.
+
+ Knock-on electrons can be created and any electron followed down to
+                                          0.189 MeV kinetic energy
+ Brem photons can be created and any photon followed down to
+                                          0.010 MeV
+CPU time =       36.373     sec for    50000 cases
+
+ Fraction of electrons reflected from plate=            7.4%
+ Fraction of electrons transmitted through plate=      64.8%
+
+
+ Fraction of energy reflected from plate=               3.3%
+ Fraction of energy deposited in plate=                62.0%
+ Fraction of energy transmitted through plate=         34.7%
+                                                 -----------
+ Total fraction of energy accounted for=              100.0%
+
